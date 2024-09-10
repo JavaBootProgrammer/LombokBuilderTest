@@ -8,9 +8,12 @@ import java.util.Set;
 
 @Builder
 public class Car {
+
     private String id;
-    private String make;
-    private String model;
+    @Builder.Default
+    private String make="Toyota";
+    @Builder.Default
+    private String model="Camry";
     @Singular
     private Set<String> Owners;
 
